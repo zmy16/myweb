@@ -1,0 +1,118 @@
+body{
+    font-family: calibri;
+    background: #c7c3c3;
+
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding-bottom:0px;
+}
+#garis1{
+    margin-top: 15px;
+}
+#garis2{
+    margin-top: 10px;
+}
+
+/*--menu--*/
+#menu{
+    border: 5px double black;
+    padding: 3px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+#menu:hover{
+    border: 7px double black;
+    background: white;
+    color:black;
+    font-weight:bold;
+}
+#menu:active{
+    color: black;
+}
+
+/*--link1--*/
+.link1{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.link1:hover{
+    border: 3px solid black;
+    background: white;
+    color: black;
+    font-weight:bold;
+}
+
+/*--link2--*/
+#link2{
+    border: 2px solid black;
+    border-radius: 25px;
+    color: black;
+    margin-bottom: 5px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+#link2:hover{
+    border: 3px solid black;
+    background: white;
+    color: black;
+    font-weight:bold;
+}
+
+/*--link3--*/
+#link3{
+    border: 2px solid black;
+    border-radius: 25px;
+    color: black;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+#link3:hover{
+    border: 3px solid black;
+    background: white;
+    color: black;
+    font-weight:bold;
+}
+
+/*--table--*/
+table {
+   width: 400px;
+   table-layout: fixed;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.selected:hover {
+    background-color: white;
+    font-weight: bold;
+    color: white;
+}
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.bp{
+    color: black;
+    text-decoration: none;
+}
+.bp:hover{
+    color: black;
+}
+
