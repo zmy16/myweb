@@ -1,5 +1,2 @@
 
-# Portofolio
-
-my portofolio web\
-still learning :)
+# Direct link web
