@@ -1,4 +1,15 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 body{
+    animation: transitionIn 1.5s;
     font-family: 'Alpino', sans-serif;
     color: #648e8c  ;
     background: #1c1c1c;
