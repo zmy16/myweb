@@ -9,7 +9,7 @@
     }
 }
 body{
-    animation: transitionIn 1.5s;
+    animation: transitionIn 1.8s;
     font-family: 'Alpino', sans-serif;
     color: #648e8c  ;
     background: #1c1c1c;
@@ -54,45 +54,20 @@ span:hover{
     background: #648e8c;
 }
 
-
-/*--icon instagram--*/
-.icon_ig{
-    text-align:center;
-    width:100%;
+/*--icon--*/
+.icon {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
 }
-.icon_ig a {
+.icon a {
     color: white;
 }
-.icon_ig a:hover{
+.icon a:hover{
     color: #1c1c1c;
 }
 
 
-/*--icon github--*/
-.icon_ghub{
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-.icon_ghub a{
-    color: white;
-}
-.icon_ghub a:hover{
-    color: #1c1c1c;
-
-}
-/*--icon blogger--*/
-.icon_blgr{
-    position: relative;
-    text-align: center;
-    width: 100%
-}
-.icon_blgr a{
-    color: white;
-}
-.icon_blgr a:hover{
-    color: #1c1c1c;
-}
 
 
 @media screen and (max-width: 600px) {
