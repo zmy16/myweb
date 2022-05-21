@@ -1,15 +1,11 @@
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
+@keyframes bounce-in {
+    0%{ opacity: 0; transform: scale(.3); }
+    50%{ opacity: 1; transform: scale(1.0); }
+    70%{ transform: scale(0.9); }
+    100%{ transform: scale(1); }
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 body{
-    animation: transitionIn 1.8s;
+    animation:bounce-in 1.3s ease-in-out 0s 1 normal;
     font-family: 'Alpino', sans-serif;
     color: #648e8c  ;
     background: #1c1c1c;
