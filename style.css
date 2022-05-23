@@ -21,6 +21,7 @@ body{
 }
 
 img{
+    -webkit-user-drag: none;
     border-radius: 50px;
     width: 140px;
     height: 140px;
