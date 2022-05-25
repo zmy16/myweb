@@ -79,6 +79,7 @@ span:hover{
     margin: 35px;
 }
 .icon a {
+    -webkit-user-drag: none;
     color: white;
 }
 .icon a:hover{
