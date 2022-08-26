@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/css?f[]=alpino@100,300,400,500,700,900,1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9be49c34fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="links.ico">
+    <title>Links</title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script>
+
+    // disable viewing page source
+    document.onkeydown = function(e) {
+    var message='Content is protected\nYou cannot view the page source.';
+    if (e.ctrlKey &&
+    (e.keyCode === 67 ||
+    e.keyCode === 86 ||
+    e.keyCode === 85 ||
+    e.keyCode === 117)) {
+    alert(message);
+    return false;
+    } else {
+    return true;
+    }
+    };
+    $(document).keypress('u',function(e) {
+    if(e.ctrlKey)
+    {
+    return false;
+    }
+    else
+    {
+    return true;
+    }
+    });
+
+
+    //disable F12 Key and Ctrl + shift + I combination
+
+    $(document).keydown(function (event) {
+    var message = "Content is protected\nYou cannot view the Dev Tools.";
+    if (event.keyCode == 123) {
+    alert(message);
+    return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+    alert(message);
+    return false;
+    }
+    });
+    </script>
+</head>
+<body oncontextmenu="return false">
+    <div id="img">
+        <img src="aku.png" alt="avatar">
+        <h1>Muhammad Raid Zakwan</h1> 
+        <p>"Terus berlari yang kau takutkan takkan terjadi"</p>
+      </div>
+      
+
+      <div class="icon">
+        <a target="_blank" href="https://www.instagram.com/zmuhammadrr/">
+            <span>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </span>
+        </a>
+      </div>
+      
+ 
+      <div class="icon">
+        <a target="_blank" href="https://github.com/zmy16">
+            <span>
+                <i class="fa-brands fa-github fa-xl"></i>
+            </span>
+        </a>
+      </div>
+
+
+      <div class="icon">
+        <a target="_blank" href="https://zmuhammadraid.blogspot.com">
+            <span>
+                <i class="fa-brands fa-blogger fa-xl"></i>
+            </span>
+        </a>
+      </div>
+
+
+      <div class="icon">
+        <a target="_blank" href="https://open.spotify.com/user/de5bic11rayjshixg62ja6i2z?si=87717c12e08e485a">
+            <span>
+                <i class="fa-brands fa-spotify fa-xl"></i>
+            </span>
+        </a>
+      </div>
+</body>
+</html>
