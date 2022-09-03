@@ -1,1 +1,106 @@
+@-webkit-keyframes bounce-in {
+    0%{ opacity: 0; -webkit-transform: scale(.3); transform: scale(.3); }
+    50%{ opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+    70%{ -webkit-transform: scale(0.9); transform: scale(0.9); }
+    100%{ -webkit-transform: scale(1); transform: scale(1); }
+}
+    
+@keyframes bounce-in {
+    0%{ opacity: 0; transform: scale(.3); }
+    50%{ opacity: 1; transform: scale(1.0); }
+    70%{ transform: scale(0.9); }
+    100%{ transform: scale(1); }
+}
 
+body{
+    user-select: none;
+    animation:bounce-in 1.3s ease-in-out 0s 1 normal;
+    font-family: 'Alpino', sans-serif;
+    color: #648e8c  ;
+    background: #1c1c1c;
+}
+
+img{
+    -webkit-user-drag: none;
+    border-radius: 50px;
+    width: 138px;
+    height: 138px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+img:hover{
+    background: rgba( 100, 142, 140, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-radius: 50px;
+}
+ 
+#img h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#img p{
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    margin-top: -15px;
+    color: #cacaca;
+    font-weight: 575;
+}
+
+a{
+    text-decoration: none;
+}
+span{
+    border: 1px solid silver; 
+    border-radius: 1em; 
+    padding: 0.65em;
+}
+span:hover{
+    background: #648e8c ;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+  
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /* background: #648e8c; */
+}
+
+/*--icon--*/    
+.icon {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+}
+.icon a {
+    -webkit-user-drag: none;
+    color: white;
+}
+.icon a:hover{
+    color: #1c1c1c;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    span{
+        border: 1px solid silver; 
+        border-radius: 1em; 
+        padding: 0.80em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    span{
+        border: 1px solid silver; 
+        border-radius: 1em; 
+        padding: 0.65em;
+    }
+}
+  
