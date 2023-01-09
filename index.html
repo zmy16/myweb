@@ -7,7 +7,149 @@
   <link href="https://api.fontshare.com/css?f[]=alpino@100,300,400,500,700,900,1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
   <link rel="shortcut icon" href="icon/links.ico">
-  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    *{
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alpino', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  animation:bounce-in 1.3s ease-in-out 0s 1 normal;
+  height: 100vh;
+  background: url(image/bg.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@-webkit-keyframes bounce-in {
+  0%{ opacity: 0; -webkit-transform: scale(.3); transform: scale(.3); }
+  50%{ opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+  70%{ -webkit-transform: scale(0.9); transform: scale(0.9); }
+  100%{ -webkit-transform: scale(1); transform: scale(1); }
+}
+  
+@keyframes bounce-in {
+  0%{ opacity: 0; transform: scale(.3); }
+  50%{ opacity: 1; transform: scale(1.0); }
+  70%{ transform: scale(0.9); }
+  100%{ transform: scale(1); }
+}
+
+.profile-card{
+  width: 400px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-header{
+  background: #1c1c1c;
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 8px;
+  margin: auto;
+}
+
+
+.pic img{
+  -webkit-user-drag: none;
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #648e8c;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.desc{
+  margin-top: -4px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #e7e5e5;
+  font-weight: 500;
+}
+
+.sm{
+  text-align: center;
+  font-size: 25px;
+}
+
+.button{
+  -webkit-user-drag: none;
+  margin: 4px;
+  border: 1px solid silver;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+.button:hover{
+  background: #648e8c ;
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur( 13px );
+  -webkit-backdrop-filter: blur( 13px );
+  color: #1c1c1c;
+  border-color: #648e8c;
+}
+.button i{
+  font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-card{
+    width: 350px;
+  }
+  .pic img{
+    width: 150px;
+    height: 150px;
+  }
+  .name{
+    font-size: 25px;
+  }
+  .desc{
+    font-size: 15px;
+  }
+  .sm, .button i{
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px){
+  .profile-card{
+    width: 500px;
+  }
+  .pic img{
+    width: 220px;
+    height: 220px;
+  }
+  .name{
+    font-size: 30px;
+  }
+  .desc{
+    font-size: 18px;
+  }
+  .sm, .button i{
+    font-size: 30px;
+  }
+}
+  </style>
 </head>
 <body>
   <div class="profile-card">
@@ -16,7 +158,7 @@
         <img src="image/profile.png" alt="">
       </div>
       <div class="name">Muhamad Raid Zakwan</div>
-      <div class="desc">"Terus berlari, yang kau takutkan takkan terjadi"</div>
+      <div class="desc">"Berlarilah, jangan takut patah"</div>
       <div class="sm">
         <a href="https://www.instagram.com/zmuhammadrr/" target="_blank" class="button"><i class="fab fa-instagram"></i></a>
         <a href="https://github.com/zmy16" target="_blank" class="button"><i class="fab fa-github"></i></a>
